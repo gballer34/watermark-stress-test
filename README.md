@@ -7,11 +7,6 @@ We test whether AI music watermarks survive the edits real tracks go through, an
 1. **Detection:** after an edit, does the detector still find the watermark?
 2. **Payload:** can the information embedded in the watermark still be read intact? California requires the latent disclosure to carry a unique ID, system name and version, and creation date, so a mark that is detected but garbled fails the law's purpose.
 
-## This part of the project
-
-This repo covers one fifth of the team's testing: **SynthID** (Google) and **AudioSeal** (Meta), tested on the same edits so they can be compared side by side, plus **ViSQOL** scores for how audible the AudioSeal mark is. Other watermarks are tested by teammates.
-
-Results and their limits are written up in `findings.md`.
 
 ## Audio files
 
