@@ -119,9 +119,9 @@ Clipped samples count where adding the watermark pushed the audio past full scal
 - **The AudioSeal watermark is predicted to be inaudible.** On every song it scores within 0.01 of the original compared with itself.
 - **The tool can tell copies apart:** MP3 scored lower on 7 of 8 songs, by up to 0.77 (ambient_1). So the near-perfect AudioSeal scores are not the tool failing to notice changes.
 - **MP3 hurt the songs differently.** Ambient tracks (rain textures, long reverb, lots of hiss-like detail) lost the most. Solo piano lost almost nothing, likely because it has few sounds at once and little high-frequency detail for MP3 to throw away.
-- **Takeaway for the talk:** AudioSeal's weakness is not sound quality. It is that timing and pitch edits remove it, and its code is not always carried intact (see above).
 
-**Limits a skeptic may raise:**
+
+**Limitations
 - ViSQOL is a computer prediction of listener opinion, not a listening test with people.
 - The Python port is unofficial (one author). Its published tests match Google's official C++ ViSQOL v3.3.3 to within 0.0002 in audio mode, but it is not Google's release.
 - One 30-second excerpt per song, in mono. Stereo-only differences, or other parts of the song, are not measured.
